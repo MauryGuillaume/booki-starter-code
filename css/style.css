@@ -30,6 +30,73 @@ a {
     text-decoration: none;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    padding-top: 0px;
+}
+
+.menu:hover {   /**Pourquoi il y a deux barres et pourquoi c'est pas collé en haut**/ /**revenir lors des medias querries pour mettre la barre au survol en dessous pour mobile**/
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+}
+
+.hebergements-menu {
+    padding-right: 20px;
+}
+
+.formulaire img {
+    width: 20px;
+    height: 20px;
+}
+.formulaire {  /**comment faire le meme style de champ de recherche**/
+    border: 1px solid black;
+    padding: 0;
+}
+
+.formulaire button {
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 5px 5px 0px ;
+}
+
+.img-icone-filtre {
+    width: 20px;
+    height: 20px;
+}
+
+.filtre-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(216, 210, 210);
+    border-radius: 25px;
+    width: 125px;
+    margin: 0px 10px 0px 10px;
+}
+
+.filtre-icone:hover {
+    background-color: #ebf4ff;
+}
+
+.filtres {
+    display: flex;
+    margin: 20px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.p-info {
+    margin-left: 5px;
+}
+ 
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -76,6 +143,37 @@ a {
     width: 65%;
 }
 
+.hebergements-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.hebergements-cards img {
+    width: 100%;
+    height: 115px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.hebergements-cards .card { /**incomprehension**/
+    width: 240px;
+    margin: 20px 10px 20px 10px;
+}
+
+/**.hebergements-card-1 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 300px;
+}
+
+.hebergements-card-1 img {
+    width: 100%;
+    height: 100px;
+    b
+}**/
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -121,6 +219,50 @@ a {
     margin-bottom: 5px;
 }
 
+.activites {
+    width: 100%;
+}
+
+.activites-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.activites-cards img {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activites-cards .card { /**incomprehension**/
+    width: 300px;
+    margin: 20px 10px 20px 10px;
+}
+
+.activites-card .card-title {
+    margin: 15px;
+}
+
+.footer {
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.footer1 {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.footer-texte {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 
 
