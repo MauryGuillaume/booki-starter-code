@@ -12,6 +12,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/bb3bc9cf8d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -36,38 +37,42 @@
             </div>
 
             <div class="formulaire">
-                <form method="get" action="">
-                    <p>
-                        <label for="localisation"><img src="images/icone/localisation.png"></label>
-                        <input type="search" name="localisation" id="localisation">
-                        <button>Rechercher</button>
-                    </p>
-                </form>
+                <div class="location">
+                    <p><i class="fa-solid fa-location-dot" style="color: #000000;"></i></p>
+                </div>
+                <div class="city">
+                    <p>Marseille, France</p>
+                </div>
+                <div class="search">
+                    <p>Rechercher</p>
+                </div>
+                <div class="search-mobil">
+                    <p><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></p>
+                </div>
             </div>
 
             <div class="filtres">
-                <p>Filtres</p>
-                <div class="filtre-icone">
-                    <img src="images/icone/tirelire.png" title="Economie" class="img-icone-filtre">
-                    <p>Économique</p>
+                <div class="filtres-solo">
+                    <p>Filtres</p>
                 </div>
-                <div class="filtre-icone">
-                    <img src="images/icone/famille.png" title="Familial" class="img-icone-filtre">
-                    <p>Familial</p>
-                </div>
-                <div class="filtre-icone">
-                    <img src="images/icone/coeur.png" title="Romantique" class="img-icone-filtre">
-                    <p>Romantique</p>
-                </div>
-                <div class="filtre-icone">
-                    <img src="images/icone/feu.png" title="Nos pépites" class="img-icone-filtre">
-                    <p>Nos pépites</p>
+                <div class="filtres-pastille">
+                    <div class="filtre-icone">
+                        <p><i class="fa-solid fa-money-bill-wave" style="color: #0065fc;"></i> Économique</p>
+                    </div>
+                    <div class="filtre-icone">
+                        <p><i class="fa-solid fa-person" style="color: #0065fc;"></i> Familial</p>
+                    </div>
+                    <div class="filtre-icone">
+                        <p><i class="fa-solid fa-heart" style="color: #0065fc;"></i> Romantique</p>
+                    </div>
+                    <div class="filtre-icone">
+                        <p><i class="fa-solid fa-fire" style="color: #0065fc;"></i> Nos pépites</p>
+                    </div>
                 </div>
             </div>
 
             <div class="info">
-                <img src="images/icone/bouton-informations.png" title="information" class="img-icone-filtre">
-                <p class="p-info">Plus de 500 logements sont disponible dans cette ville</p>
+                <p class="p-info"><i class="fa-solid fa-circle-info" style="color: #0065fc;"></i> Plus de 500 logements sont disponible dans cette ville</p>
             </div>
 
 
@@ -196,7 +201,7 @@
                         </a>
                     </div>
                     <div>
-                        <h3 class="section-afficher-plus">Afficher plus</h2>
+                        <h3 class="section-afficher-plus">Afficher plus</h3>
                     </div>
                 </section>
 

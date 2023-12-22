@@ -40,7 +40,7 @@ a {
     padding-top: 0px;
 }
 
-.menu:hover {   /**Pourquoi il y a deux barres et pourquoi c'est pas collé en haut**/ /**revenir lors des medias querries pour mettre la barre au survol en dessous pour mobile**/
+.menu :hover {   /**Pourquoi il y a deux barres et pourquoi c'est pas collé en haut**/ /**revenir lors des medias querries pour mettre la barre au survol en dessous pour mobile**/
     border-top: 3px solid #0065FC;
     color: #0065FC;
 }
@@ -49,24 +49,49 @@ a {
     padding-right: 20px;
 }
 
-.formulaire img {
-    width: 20px;
-    height: 20px;
-}
-.formulaire {  /**comment faire le meme style de champ de recherche**/
-    border: 1px solid black;
-    padding: 0;
+.formulaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
-.formulaire button {
+.location {
+    border: 1px solid #f2f2f2;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 0px 15px 0px 15px;
+}
+
+.city {
+    border: 1px solid #f2f2f2;
+    text-align: center;
+    padding: 0px 15px 0px 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.filtres {
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.search {
+    border: 1px solid #f2f2f2;
+    text-align: center;
     background-color: #0065FC;
     color: white;
-    border-radius: 0px 5px 5px 0px ;
+    border-radius: 0px 15px 15px 0px;
+    padding: 0px 15px 0px 15px;
 }
 
-.img-icone-filtre {
-    width: 20px;
-    height: 20px;
+.search-mobil {
+    border: 1px solid #f2f2f2;
+    text-align: center;
+    background-color: #0065FC;
+    border-radius: 15px 15px 15px 15px;
+    padding: 0px 15px 0px 15px;
 }
 
 .filtre-icone {
@@ -81,11 +106,16 @@ a {
 
 .filtre-icone:hover {
     background-color: #ebf4ff;
+    cursor: pointer;
 }
 
 .filtres {
     display: flex;
     margin: 20px;
+}
+
+.filtres-pastille {
+    display: flex;
 }
 
 .info {
@@ -161,19 +191,6 @@ a {
     margin: 20px 10px 20px 10px;
 }
 
-/**.hebergements-card-1 {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    height: 300px;
-}
-
-.hebergements-card-1 img {
-    width: 100%;
-    height: 100px;
-    b
-}**/
-
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -236,7 +253,7 @@ a {
     border-radius: 20px 20px 0px 0px;
 }
 
-.activites-cards .card { /**incomprehension**/
+.activites-cards .card {
     width: 300px;
     margin: 20px 10px 20px 10px;
 }
@@ -271,6 +288,10 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .filtres {
+        flex-direction: column;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -305,5 +326,42 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .header {
+        flex-direction: column;
+    }
+
+    .menu :hover { /**pourquoi il y a toujours en haut**/
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+    }
+
+    .filtres {
+        flex-direction: column;
+    }
+
+    .filtres-pastille {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .populaires {
+        flex-direction: column;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+    } /**probleme**/
+
+    .search {
+        display: none;
+    }
+      
+    @media screen and (min-width: 768px) {
+      .search {
+          display: block;
+        }
+      .search-mobil {
+          display: none;
+        }/**??**/
+    }
 }
