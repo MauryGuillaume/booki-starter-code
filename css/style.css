@@ -33,6 +33,13 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
+    margin: 0;
+}
+
+.logo-booki {
+    width: 50px;
+    height: 25px;
+    margin-top: 20px;
 }
 
 .menu {
@@ -40,13 +47,18 @@ a {
     padding-top: 0px;
 }
 
-.menu :hover {   /**Pourquoi il y a deux barres et pourquoi c'est pas collé en haut**/ /**revenir lors des medias querries pour mettre la barre au survol en dessous pour mobile**/
+.hebergements-menu:hover {   /**Pourquoi il y a deux barres et pourquoi c'est pas collé en haut**/
     border-top: 3px solid #0065FC;
     color: #0065FC;
 }
 
 .hebergements-menu {
     padding-right: 20px;
+}
+
+.activites-menu:hover {   /**Pourquoi il y a deux barres et pourquoi c'est pas collé en haut**/
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
 }
 
 .formulaire {
@@ -92,6 +104,7 @@ a {
     background-color: #0065FC;
     border-radius: 15px 15px 15px 15px;
     padding: 0px 15px 0px 15px;
+    display: none;
 }
 
 .filtre-icone {
@@ -330,8 +343,39 @@ a {
         flex-direction: column;
     }
 
-    .menu :hover { /**pourquoi il y a toujours en haut**/
+    .logo-booki {
+        width: 50px;
+        height: 25px;
+        align-items: center;
+        margin-left: 47%;
+    }
+
+    .menu {
+        border-bottom: 3px solid #f2f2f2 ;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .hebergements-menu {
+        width: 50%;
+        text-align: center;
+    }
+
+    .activites-menu {
+        width: 50%;
+        text-align: center;
+    }
+
+    .hebergements-menu:hover { /**pourquoi il y a toujours en haut**/
         border-bottom: 3px solid #0065FC;
+        border-top: none;
+        color: #0065FC;
+    }
+    
+    .activites-menu:hover { /**pourquoi il y a toujours en haut**/
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
         color: #0065FC;
     }
 
@@ -344,24 +388,30 @@ a {
         flex-wrap: wrap;
     }
 
-    .populaires {
-        flex-direction: column;
+    .filtre-icone {
+        margin-bottom: 20px;
     }
 
     .populaires-cards {
         flex-direction: column;
-    } /**probleme**/
+        width: 1000px;
+    }
 
     .search {
         display: none;
     }
-      
-    @media screen and (min-width: 768px) {
-      .search {
-          display: block;
-        }
-      .search-mobil {
-          display: none;
-        }/**??**/
+
+    .search-mobil {
+        display: block;
     }
+
+    .footer1 {
+        flex-direction: column;
+    }
+    
+    .activites-cards .card img {
+        width: 300px;
+        height: 150px;
+    }
+    
 }
