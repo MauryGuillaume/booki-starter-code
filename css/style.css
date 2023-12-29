@@ -359,9 +359,13 @@ a {
         width: 700px;
     }
 
-    .activites-cards {
-        flex-wrap: nowrap;
+    .activites-cards .card {
         width: 200px;
+        height: 325px;
+    }
+
+    .activites-cards .card img {
+        height: 250px;
     }
 }
 
