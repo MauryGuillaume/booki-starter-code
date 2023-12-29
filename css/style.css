@@ -442,6 +442,11 @@ a {
     .footer1 {
         flex-direction: column;
     }
+
+    .activites-cards .card {
+        width: 300px;
+        height: 200px;
+    }
     
     .activites-cards .card img {
         width: 300px;
