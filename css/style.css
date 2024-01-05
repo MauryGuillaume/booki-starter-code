@@ -266,7 +266,7 @@ a {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 10px;
 }
 
 .populaires-cards img {
@@ -340,7 +340,7 @@ a {
     align-items: flex-start;
     padding: 10px;
     margin-right: 50px;
-    width: 100%;
+    width: 95%;
 }
 
 .footer-texte {
@@ -360,6 +360,10 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .main-container {
+        padding: 0;
+    }
+    
     .filtres {
         flex-direction: column;
     }
